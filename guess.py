@@ -4,8 +4,12 @@
 # If that is wrong, tell user the number is greater or smaller
 
 import random
+start = input('Please input the range(Start): ')
+end = input('Please input the range(End): ')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1
