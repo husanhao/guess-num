@@ -6,13 +6,17 @@
 import random
 
 r = random.randint(1, 100)
+count = 0
 while True:
+	count += 1
 	num = input('Please enter a number: ')
 	num = int(num)
 	if num == r:
 		print('Correct!')
+		print('You use total: ', count, 'guess')
 		break
 	elif num > r:
 		print('Number should be smaller')
 	else:
 		print('Number should be greater')
+	print('This is ', count, 'guess')
